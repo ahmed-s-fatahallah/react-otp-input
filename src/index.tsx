@@ -129,6 +129,7 @@ const OTPInput = ({
         if (!hasInvalidInput) {
           handleOTPChange(value.split(''));
           focusInput(numInputs - 1);
+          otpValueRef.current = valueArr;
         }
       }
 
